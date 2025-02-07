@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    background-color: rgb(31, 28, 28);
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    width: 45px;
+}
+
+.SB {
+    color: white;
+    margin: 2px 0 0 0.5px;
+    font-family: arial;
+  font-weight: bold;
+  font-style: italic;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.hero img{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.get-started {
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 669px;
+    background: linear-gradient(to bottom, white, #845656);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    margin-top: 8rem;
+    display: flex;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(31, 28, 28);
+    font-style: oblique;
+    justify-content: center;
+}
+.hero-content span h1{
+    animation: typing 2s steps(24) ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #333;
+    background: linear-gradient(to bottom, rgb(219, 205, 206), #ceb6b6);
+    text-align: center;
+
+}
+  
+@keyframes typing {
+    from {
+      width: 20%;
+    }
+    to {
+      width:100%;
+    }
+}
+
+/* .hero-content span::after{
+    content:'';
+    width: 0;
+    opacity: 0px;
+    
+    position: absolute;
+    
+} */
+.hero p {
+    font-size: 18px;
+    color: rgb(43, 39, 39);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-family: "Nunito Sans", serif, sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 400,
+    "YTLC" 500;
+}
+.get-started-btn {
+    font-weight: 600;
+    background-color: white;
+    color: rgb(158, 31, 31);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 4px 4px 10px rgba(0.2, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.get-started-btn:hover {
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0.2, 0, 0, 0.8);
+}
+
+/* What We Do Section */
+.what-we-do {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    height: 800px;
+    background-color:rgb(245, 234, 234) ;
+}
+
+.what-we-do h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.what-we-do p {
+    color: #625d5d;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+.username{
+    display:flex;
+    padding: 4rem 2rem;
+    height: 800px;
+
+}
+.username img{
+    margin-left:20px;
+    width:50vw;
+}
+.U1{
+    display: flex;
+}
+.user p{
+    color:#625d5d;
+    width:30vw;
+    height:auto;
+    margin-left: 50px;
+    margin-top:120px;
+    font-size: 22px;
+    line-height: 1.2;
+
+}
+/* Why Needed Section */
+.why-needed {
+    background-color: rgb(245, 234, 234);
+    padding: 4rem 2rem;
+    height: 600px;
+    justify-content: center;
+}
+.why-needed-1{
+    justify-content: center;
+    text-align: center;
+}
+.why-needed h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+.why-needed p {
+    color: #625d5d;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    max-width: 200vw;
+    margin-top: 90px;
+    
+}
+.why-needed img {
+    width: 100%;
+    max-width: 80vw;
+    max-height: 20vh;
+    margin-top:110px;
+    
+}
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    height: 600px;
+}
+
+.about-content {
+    max-width: 800px;
+    justify-content: end;
+    display: grid;
+    align-items: center;
+
+}
+
+.about-text p {
+    color: #625d5d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.about-title h2 {
+    font-size: 5rem;
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(31, 28, 28);
+    color: white;
+    padding: 2rem;
+    height: 300px;
+    max-width: fit-content;
+}
+
+.footer-content {
+    max-width: auto;
+    max-height:600px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-left: 20px;
+}
+.footer-section{
+    margin-left: 20px;
+    width:40vw;
+}
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+}
+.footer-section2{
+    margin-left: 20px;
+}
+.footer-section2 h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-right: 2px;
+    
+}
+.creator{
+    justify-content: end;
+    width:50vw;
+    height:auto;
+      margin-top: 35vh;
+    /* margin-left: 48vw; */
+    display: flex;
+}
+.creator h3{
+    color: #d1d5db;
+    bottom: 0%;
+    display: flex;
+
+}
